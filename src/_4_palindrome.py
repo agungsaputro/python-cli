@@ -10,7 +10,7 @@ def cli():
     pass
 
 #4
-@cli.command(name="Palindrome")
+@cli.command(name="palindrome")
 @click.argument('sentence')
 def palindrome(sentence):
     l, h = 0, len(sentence) - 1

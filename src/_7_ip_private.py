@@ -9,7 +9,7 @@ from urllib import request
 def cli():
     pass
 
-@cli.command(name="IP")
+@cli.command(name="get_ip")
 @click.argument("ip")
 def get_ip(ip):
     ip = socket.gethostbyname(socket.gethostname())

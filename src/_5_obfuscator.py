@@ -10,9 +10,9 @@ def cli():
     pass
 
 #5
-@cli.command(name="Obfuscate")
+@cli.command(name="obfuscate")
 @click.argument('sentence')
-def lower(sentence):
+def obfuscate(sentence):
     sentence = list(sentence)
     text = ''.join(list(map(lambda char: f"&#{ord(char)};", sentence)))
     print(text)

@@ -1,0 +1,3 @@
+click==7.1.2
+-e git+https://github.com/agungsaputro/python-cli.git@c26a9d1150aa9bc135875458bb135d9d3e92bdcc#egg=main
+numpy==1.19.1

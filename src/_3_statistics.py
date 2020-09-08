@@ -10,27 +10,27 @@ def cli():
     pass
 
 #3
-@cli.command(name="Mean")
+@cli.command(name="mean")
 @click.argument("number", type=click.INT, nargs=-1)
-def add_number(number):
+def mean(number):
     l = list(number)
     print(statistics.mean(l))
 
-@cli.command(name="Median")
+@cli.command(name="median")
 @click.argument("number", type=click.INT, nargs=-1)
-def add_number(number):
+def median(number):
     l = list(number)
     print(statistics.median(l))
 
-@cli.command(name="Mode")
+@cli.command(name="mode")
 @click.argument("number", type=click.INT, nargs=-1)
-def add_number(number):
+def mode(number):
     l = list(number)
     print(statistics.mode(l))
 
-@cli.command(name="Fmean")
+@cli.command(name="fmean")
 @click.argument("number", type=click.INT, nargs=-1)
-def add_number(number):
+def fmean(number):
     l = list(number)
     print(statistics.fmean(l))
 

@@ -10,9 +10,9 @@ def cli():
     pass
 
 
-@cli.command(name="Sum")
+@cli.command(name="sum_number")
 @click.option('--num', prompt='enter number ke 1 :', help='oke')
-def sum(num):
+def sum_number(num):
     numbers = num
     total = int(num)
     i = 1

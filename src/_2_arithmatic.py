@@ -10,30 +10,30 @@ def cli():
     pass
 
 #2
-@cli.command(name="Add")
+@cli.command(name="add")
 @click.argument("number", type=click.INT, nargs=-1)
-def add_number(number):
+def add(number):
     l = list(number)
     res = reduce(lambda x,y: x+y,l)
     print(res)
 
-@cli.command(name="Substract")
+@cli.command(name="substract")
 @click.argument("number", type=click.INT, nargs=-1)
-def add_number(number):
+def subtract(number):
     l = list(number)
     res = reduce(lambda x,y:x-y, l)
     print(res)
 
-@cli.command(name="Multiply")
+@cli.command(name="multiply")
 @click.argument("number", type=click.INT, nargs=-1)
-def add_number(number):
+def multiply(number):
     l = list(number)
     res = reduce(lambda x,y:x*y, l)
     print(res)
 
-@cli.command(name="Devide")
+@cli.command(name="divide")
 @click.argument("number", type=click.INT, nargs=-1)
-def add_number(number):
+def divide(number):
     l = list(number)
     res = reduce(lambda x,y:x/y,l)
     print(res)
