@@ -8,6 +8,7 @@ from src._6_random_string import random_string
 from src._7_ip_private import get_ip
 from src._8_ip_public import get_public_ip
 from src._9_sum import sum_number
+from src._10_crud import read
 
 
 @click.group()
@@ -49,6 +50,9 @@ cli.add_command(get_public_ip)
 #9
 cli.add_command(sum_number)
 
+#10
+
+cli.add_command(read)
 
 if __name__ == "__main__":
     cli()

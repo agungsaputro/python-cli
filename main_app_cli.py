@@ -4,7 +4,7 @@ import statistics
 import socket
 from urllib import request
 import random
-
+import json
 
 @click.group()
 def cli():
@@ -181,6 +181,10 @@ def sum(num):
             total += int(numbers)
     print("hasil",total)
 #10
+@cli.command(name="read")
+def read():
+    read = open("./users.json", "r").read()
+    print(read)
 
 
 if __name__ == "__main__":
