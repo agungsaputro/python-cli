@@ -1,13 +1,13 @@
 import click
-from _1_string_transform import lower, upper, capitalize
-from _2_arithmatic import add,subtract,multiply,divide
-from _3_statistics import mean, median, mode , fmean
-from _4_palindrome import palindrome
-from _5_obfuscator import obfuscate
-from _6_random_string import random_string
-from _7_ip_private import get_ip
-from _8_ip_public import get_public_ip
-from _9_sum import sum_number
+from src._1_string import lower, upper, capitalize
+from src._2_arithmatic import add,subtract,multiply,divide
+from src._3_statistics import mean, median, mode , fmean
+from src._4_palindrome import palindrome
+from src._5_obfuscator import obfuscate
+from src._6_random_string import random_string
+from src._7_ip_private import get_ip
+from src._8_ip_public import get_public_ip
+from src._9_sum import sum_number
 
 
 @click.group()
